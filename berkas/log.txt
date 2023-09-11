@@ -1,0 +1,61 @@
+Attaching to item-app, item-db
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=a2e2ac4cbf1d
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] modules: none
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] build environment:
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db   | 2023-09-11T09:16:11.075+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db   | 2023-09-11T09:16:11.076+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db   | 2023-09-11T09:16:11.076+0000 I STORAGE  [initandlisten] 
+item-db   | 2023-09-11T09:16:11.076+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db   | 2023-09-11T09:16:11.076+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db   | 2023-09-11T09:16:11.076+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1407M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | 
+item-app  | NODE_ENV: production
+item-db   | 2023-09-11T09:16:51.129+0000 I STORAGE  [initandlisten] WiredTiger message [1694423811:128998][1:0x7f9b22ad4a40], txn-recover: Main recovery loop: starting at 3/7168
+item-db   | 2023-09-11T09:16:51.272+0000 I STORAGE  [initandlisten] WiredTiger message [1694423811:272756][1:0x7f9b22ad4a40], txn-recover: Recovering log 3 through 4
+item-db   | 2023-09-11T09:16:51.539+0000 I STORAGE  [initandlisten] WiredTiger message [1694423811:539217][1:0x7f9b22ad4a40], txn-recover: Recovering log 4 through 4
+item-db   | 2023-09-11T09:16:51.597+0000 I STORAGE  [initandlisten] WiredTiger message [1694423811:597588][1:0x7f9b22ad4a40], txn-recover: Set global recovery timestamp: 0
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] 
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] 
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] 
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db   | 2023-09-11T09:16:53.901+0000 I CONTROL  [initandlisten] 
+item-db   | 2023-09-11T09:16:54.090+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db   | 2023-09-11T09:16:54.091+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db   | 2023-09-11T09:16:54.091+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db   | 2023-09-11T09:16:54.091+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-app exited with code 0
+item-app  | 
+item-app  | > docker-software-delivery@1.0.0 start /app
+item-app  | > node ./bin/www
+item-app  | 
+item-app  | 
+item-app  | NODE_ENV: production
+item-db   | 2023-09-11T09:16:57.343+0000 I NETWORK  [listener] connection accepted from 172.30.0.3:39822 #1 (1 connection now open)
+item-db   | 2023-09-11T09:16:57.348+0000 I NETWORK  [conn1] received client metadata from 172.30.0.3:39822 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+item-app  | Connected to database
+item-app  | [0mGET / [32m200 [0m158.252 ms - 785[0m
+item-app  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m2.584 ms - -[0m
+item-app  | [0mGET /stylesheets/style.css [32m200 [0m19.174 ms - 519[0m
+item-app  | [0mGET /api [32m200 [0m46.671 ms - 635[0m
+item-app  | [0mGET / [36m304 [0m0.828 ms - -[0m
+item-app  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.583 ms - -[0m
+item-app  | [0mGET /stylesheets/style.css [36m304 [0m2.283 ms - -[0m
+item-app  | [0mGET /api [36m304 [0m2.832 ms - -[0m
+item-app  | [0mPOST /api [32m201 [0m38.357 ms - 67[0m
+item-app  | [0mPOST /api [32m201 [0m2.111 ms - 59[0m
+item-app  | [0mPOST /api [32m201 [0m1.614 ms - 62[0m
+item-app  | [0mPOST /api [32m201 [0m1.461 ms - 53[0m
