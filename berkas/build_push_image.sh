@@ -1,3 +1,10 @@
+
+## masuk ke folder proyek-pertama
+cd /home/welly/dicoding/proyek-pertam-a433
+
+## membuat image berdasarkan Dockerfiile
+docker build -t item-app:v1 .
+
 ## menyimpan kode token akses ghcr.io ke variable
 echo "EXPORT WELLYCT_PAT = ##KODE_TOKEN_ACCESS##" >> /home/welly/.bashrc
 
@@ -12,3 +19,5 @@ docker push ghcr.io/wellyct/item-app:v1
 
 ## melihat informasi image yang sudah di upload
 docker inspect ghcr.io/wellyct/item-app:v1
+
+
